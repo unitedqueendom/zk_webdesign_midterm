@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tetley AND MIRALAX</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+  <body id="contact">
+    <div class="main-nav" id="navbar">
+          <a href="index.html" ><img src="images/logo.png" class="top-logo" alt="logo"></a>
+        <!--hamburger nav menu-->
+        <div class="header"></div>
+          <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+          <label for="openSidebarMenu" class="sidebarIconToggle">
+            <span class="spinner diagonal part-1"></span>
+            <span class="spinner horizontal"></span>
+            <span class="spinner diagonal part-2"></span>
+          </label>
+          <div class="sidebarMenu" id="menu">
+            <ul class="sidebarMenuInner nav-flex">
+              <li><a href="index.html">Home</a></li>                 
+              <li><a href="about.html">About</a></li>
+              <li><a href="product.html">Products</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+          </div>
+          </div>
+      <header class="contact-bg">
+          <h1 class="contact-h1">Contact US</h1>
+      </header>
+      <div class="contact-content">
+        <div class="title-col">
+          <h2>Feel free to Contact US!</h2>
+          <h3>Know more about us and try our products</h3>
+        </div> 
+
+        <div class="contact-card title-card">
+          <h4>Contact details</h4>
+            <table>
+              <tr>
+                <td><i class="fas fa-mobile-alt" title="Mobile phone icon, for optimised websites"></i></td>
+                <td><p>(519)-701-0031</p></td>
+              </tr>
+              <tr>
+                <td><i class="fab fa-facebook-square contact-page-i" title="Get more followers on Facebook through your website"></i></td>
+                <td><a href="https://www.facebook.com/profile.php?id=100008738973062" target="_blank"><p class="contact-card-p">Follow us</p></a></td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-map-marker-alt" title="Map marker icon"></i></td>
+                <td><p>London, ON</p></td>
+              </tr>
+            </table>
+            <ul>
+              <li class="contact-list"></li>
+            </ul>
+        </div>
+      </div>
+
+
+      <div class="form-wrapper wrapper-grey" id="home-form">
+          <div class="form-info">
+              <h2 class="home-form">Contact US</h2>
+              <p class="home-form">If you have any questions about us, 
+                please leave the message below and we will reply back as soon as possible. THANK YOU.</p>
+ 
+          </div>
+
+
+          <fieldset class="form-container">  
+              <form name="contactform" method="post" action="send_form_email.php">      
+                  <div class="block-2">
+                  <input required type="text" id="name" name="user_name" placeholder="your name">
+                  </div>
+                  
+                  <div class="block-2">
+                  <input required type="email" id="mail" name="user_email" placeholder="email address">
+                  </div>
+                  
+                  <div class="block-2">
+                  <input required type="tel" id="tel" name="user_phone" placeholder="telephone (optional)">
+                  </div>   
+                      <textarea id="textarea" name="message" placeholder="your message"></textarea>
+                      <button type="submit" class="submit">Send message</button>                              
+              </form>
+          </fieldset>
+      </div>
+
+
+        <div id="map"></div>
+
+
+
+    <footer>
+      <p class="copyright">Copyright 2020, Zepeng Kang</p>
+      <p>Privacy Policy</p> 
+    </footer>
+    <script>
+        function initMap() {
+          var uluru = {lat: 42.984268, lng: -81.247528};
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: uluru
+          });
+          var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+          });
+        }
+      </script>
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjEwhLbD9zshy0yv-qErxILqvbaQEZXUA&callback=initMap">
+      </script>
+      <script src="js/main.js"></script>
+  </body>
+  </html>
+
+  
